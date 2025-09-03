@@ -43,7 +43,7 @@ body.dark-mode {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
   background: var(--main-bg);
   color: var(--main-text);
   transition: background 0.3s, color 0.3s;
@@ -129,19 +129,25 @@ body {
   width: 100%;
 }
 
+/* Make sidebar links look like sidebar buttons */
+.sidebar-link,
 .sidebar button {
+  display: block;
   width: 100%;
   padding: 15px 20px;
-  border: none;
-  background: none;
   color: inherit;
+  background: none;
   font-size: 1rem;
   text-align: left;
+  text-decoration: none;
+  border: none;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   outline: none;
 }
 
+.sidebar-link:hover,
+.sidebar-link:focus,
 .sidebar button:focus,
 .sidebar button:hover {
   background: var(--button-focus);
