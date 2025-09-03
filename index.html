@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kiarano Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar" aria-label="Main navigation">
+      <div class="sidebar-header">
+        <span class="site-title">Kiarano Portfolio</span>
+        <button id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+          🌙
+        </button>
+      </div>
+      <ul>
+        <li><button onclick="showPage('home')" aria-controls="home">Home</button></li>
+        <li><button onclick="showPage('about')" aria-controls="about">About</button></li>
+        <li><button onclick="showPage('projects')" aria-controls="projects">Projects</button></li>
+        <li><button onclick="showPage('gallery')" aria-controls="gallery">Gallery</button></li>
+        <li><button onclick="showPage('contact')" aria-controls="contact">Contact</button></li>
+      </ul>
+    </nav>
+    <main class="main-content">
+      <section id="home" class="page active" tabindex="0">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is a simple, professional portfolio website.</p>
+      </section>
+      <section id="about" class="page" tabindex="0">
+        <h1>About Me</h1>
+        <p>Brief description about yourself.</p>
+      </section>
+      <section id="projects" class="page" tabindex="0">
+        <h1>Projects</h1>
+        <div>
+          <h2>Project Title</h2>
+          <img src="project-image.jpg" alt="Screenshot of Project Title" />
+          <p>Project description goes here.</p>
+          <video controls src="project-video.mp4" aria-label="Demo video for Project Title"></video>
+        </div>
+      </section>
+      <section id="gallery" class="page" tabindex="0">
+        <h1>Gallery</h1>
+        <img src="gallery-image.jpg" alt="Gallery example" />
+        <video controls src="gallery-video.mp4" aria-label="Gallery video"></video>
+      </section>
+      <section id="contact" class="page" tabindex="0">
+        <h1>Contact</h1>
+        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <p>
+          <a href="resume.pdf" target="_blank" rel="noopener" class="resume-link">
+            View Resume (PDF)
+          </a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener">
+            LinkedIn Profile
+          </a>
+        </p>
+      </section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
