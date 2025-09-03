@@ -45,10 +45,11 @@ function setupThemeToggle() {
   if (window.localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
     darkMode = true;
-    updateIcon();
   } else {
-    updateIcon();
+    body.classList.remove('dark-mode');
+    darkMode = false;
   }
+  updateIcon();
 
   toggleBtn.addEventListener('click', () => {
     darkMode = !darkMode;
