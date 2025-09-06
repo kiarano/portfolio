@@ -31,37 +31,54 @@
       </ul>
     </nav>
     <main class="main-content">
-      <section id="home" class="page active" tabindex="0">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is a simple, professional portfolio website.</p>
-      </section>
-      <section id="about" class="page" tabindex="0">
-        <h1>About Me</h1>
-        <p>Brief description about yourself.</p>
-      </section>
-      <section id="projects" class="page" tabindex="0">
-        <h1>Projects</h1>
-        <div>
-          <h2>Project Title</h2>
-          <img src="project-image.jpg" alt="Screenshot of Project Title" />
-          <p>Project description goes here.</p>
-          <video controls src="project-video.mp4" aria-label="Demo video for Project Title"></video>
-        </div>
-      </section>
-      <section id="gallery" class="page" tabindex="0">
-        <h1>Gallery</h1>
-        <img src="gallery-image.jpg" alt="Gallery example" />
-        <video controls src="gallery-video.mp4" aria-label="Gallery video"></video>
-      </section>
-      <section id="contact" class="page" tabindex="0">
-        <h1>Contact</h1>
-        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-        <p>
-          <a href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener">
-            LinkedIn Profile
-          </a>
-        </p>
-      </section>
+        <section id="home" class="page active" tabindex="0">
+            <div class="welcome-box">
+                <h1>Welcome to My Portfolio</h1>
+                <p>This is a simple, professional portfolio website.</p>
+            </div>
+            <div class="home-links">
+                <a href="#" class="home-link" onclick="showPage('projects')" aria-label="Go to Projects">
+                    <div class="home-link-img-wrapper">
+                        <img src="images/protoglove.jpg" alt="Projects" class="home-link-img" />
+                        <span class="home-link-text">Projects</span>
+                    </div>
+                </a>
+                <a href="#" class="home-link" onclick="showPage('about')" aria-label="Go to About Me">
+                    <div class="home-link-img-wrapper">
+                        <img src="images/thumbnail.jpg" alt="About Me" class="home-link-img" />
+                        <span class="home-link-text">About Me</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    
+        <section id="about" class="page" tabindex="0">
+            <h1>About Me</h1>
+            <p>Brief description about yourself.</p>
+        </section>
+        <section id="projects" class="page" tabindex="0">
+            <h1>Projects</h1>
+            <div>
+                <h2>Project Title</h2>
+                <img src="project-image.jpg" alt="Screenshot of Project Title" />
+                <p>Project description goes here.</p>
+                <video controls src="project-video.mp4" aria-label="Demo video for Project Title"></video>
+            </div>
+        </section>
+        <section id="gallery" class="page" tabindex="0">
+            <h1>Gallery</h1>
+            <img src="gallery-image.jpg" alt="Gallery example" />
+            <video controls src="gallery-video.mp4" aria-label="Gallery video"></video>
+        </section>
+        <section id="contact" class="page" tabindex="0">
+            <h1>Contact</h1>
+            <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+            <p>
+                <a href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener">
+                    LinkedIn Profile
+                </a>
+            </p>
+        </section>
     </main>
   </div>
   <script src="script.js"></script>
